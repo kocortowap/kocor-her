@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<component name="dataSourceStorage">
+  <data-source source="LOCAL" name="MySQL - dbpmb@localhost" uuid="ab9ea46e-87bf-44a0-9b5b-0df18c8add89">
+    <database-info product="MySQL" version="5.1.37" jdbc-version="4.0" driver-name="MySQL Connector Java" driver-version="mysql-connector-java-5.1.26 ( Revision: ${bzr.revision-id} )">
+      <extra-name-characters>#@</extra-name-characters>
+      <identifier-quote-string>`</identifier-quote-string>
+    </database-info>
+    <case-sensitivity plain-identifiers="lower" quoted-identifiers="lower"/>
+    <schema name="" catalog="dbpmb"/>
+    <table name="administrator" schema="" catalog="dbpmb" type="TABLE">
+      <column name="id" sqlType="INT" length="10" precision="0" nullable="false" jdbcType="4" autoIncrement="true"/>
+      <column name="nama" sqlType="VARCHAR" length="100" precision="0" nullable="false" jdbcType="12"/>
+      <column name="alamat" sqlType="TEXT" length="65535" precision="0" nullable="false" jdbcType="-1"/>
+      <column name="password" sqlType="VARCHAR" length="50" precision="0" nullable="false" jdbcType="12"/>
+      <column name="username" sqlType="VARCHAR" length="50" precision="0" nullable="false" jdbcType="12"/>
+      <primary-key name="PRIMARY" columns="id"/>
+    </table>
+    <table name="bendahara" schema="" catalog="dbpmb" type="TABLE">
+      <column name="id" sqlType="INT" length="10" precision="0" nullable="false" jdbcType="4" autoIncrement="true"/>
+      <column name="nama" sqlType="VARCHAR" length="50" precision="0" nullable="false" jdbcType="12"/>
+      <column name="username" sqlType="VARCHAR" length="50" precision="0" nullable="false" jdbcType="12"/>
+      <column name="password" sqlType="VARCHAR" length="50" precision="0" nullable="false" jdbcType="12"/>
+      <primary-key name="PRIMARY" columns="id"/>
+    </table>
+    <table name="daftar" schema="" catalog="dbpmb" type="TABLE">
+      <column name="id_pmbid" sqlType="INT" length="10" precision="0" nullable="false" jdbcType="4" autoIncrement="true"/>
+      <column name="pmbid" sqlType="VARCHAR" length="50" precision="0" nullable="false" jdbcType="12"/>
+      <column name="id_jalur" sqlType="INT" length="10" precision="0" nullable="false" jdbcType="4"/>
+      <column name="id_prodi" sqlType="CHAR" length="11" precision="0" nullable="false" jdbcType="1"/>
+      <column name="nama" sqlType="VARCHAR" length="100" precision="0" nullable="false" jdbcType="12"/>
+      <column name="status" sqlType="CHAR" length="40" precision="0" nullable="false" jdbcType="1"/>
+      <column name="idkol" sqlType="TINYINT" length="3" precision="0" nullable="false" jdbcType="-6"/>
+      <column name="tanda" sqlType="CHAR" length="10" precision="0" nullable="false" jdbcType="1"/>
+      <column name="pesan_personal" sqlType="VARCHAR" length="100" precision="0" nullable="false" jdbcType="12"/>
+      <column name="jk" sqlType="ENUM" length="2" precision="0" nullable="false" jdbcType="1"/>
+      <column name="tempatlahir" sqlType="VARCHAR" length="50" precision="0" nullable="false" jdbcType="12"/>
+      <column name="tanggallahir" sqlType="DATE" length="10" precision="0" nullable="false" jdbcType="91"/>
+      <column name="alamat" sqlType="TEXT" length="65535" precision="0" nullable="false" jdbcType="-1"/>
+      <column name="kecamatan" sqlType="VARCHAR" length="50" precision="0" nullable="false" jdbcType="12"/>
+      <column name="kabupaten" sqlType="VARCHAR" length="50" precision="0" nullable="false" jdbcType="12"/>
+      <column name="propinsi" sqlType="VARCHAR" length="50" precision="0" nullable="false" jdbcType="12"/>
+      <column name="statuspernikahan" sqlType="VARCHAR" length="30" precision="0" nullable="false" jdbcType="12"/>
+      <column name="jenis_slta" sqlType="VARCHAR" length="40" precision="0" nullable="false" jdbcType="12"/>
+      <column name="jurusan_slta" sqlType="VARCHAR" length="50" precision="0" nullable="false" jdbcType="12"/>
+      <column name="tahun_lulus_slta" sqlType="VARCHAR" length="20" precision="0" nullable="false" jdbcType="12"/>
+      <column name="no_ijazah" sqlType="VARCHAR" length="50" precision="0" nullable="false" jdbcType="12"/>
+      <column name="noseriijazah" sqlType="VARCHAR" length="50" precision="0" nullable="false" jdbcType="12"/>
+      <column name="nonisn" sqlType="VARCHAR" length="10" precision="0" nullable="false" jdbcType="12"/>
+      <column name="nama_slta" sqlType="VARCHAR" length="100" precision="0" nullable="false" jdbcType="12"/>
+      <column name="alamat_slta" sqlType="TEXT" length="65535" precision="0" nullable="false" jdbcType="-1"/>
+      <column name="kecamatan_slta" sqlType="VARCHAR" length="50" precision="0" nullable="false" jdbcType="12"/>
+      <column name="kabupaten_slta" sqlType="VARCHAR" length="50" precision="0" nullable="false" jdbcType="12"/>
+      <column name="propinsi_slta" sqlType="VARCHAR" length="50" precision="0" nullable="false" jdbcType="12"/>
+      <column name="rata_un" sqlType="CHAR" length="20" precision="0" nullable="false" jdbcType="1"/>
+      <column name="rata_um" sqlType="CHAR" length="20" precision="0" nullable="false" jdbcType="1"/>
+      <column name="nama_ayah" sqlType="VARCHAR" length="100" precision="0" nullable="false" jdbcType="12"/>
+      <column name="pendidikan_akhir_ayah" sqlType="VARCHAR" length="50" precision="0" nullable="false" jdbcType="12"/>
+      <column name="pekerjaan_ayah" sqlType="VARCHAR" length="50" precision="0" nullable="false" jdbcType="12"/>
+      <column name="penghasilan_ayah" sqlType="VARCHAR" length="50" precision="0" nullable="false" jdbcType="12"/>
+      <column name="nama_ibu" sqlType="VARCHAR" length="100" precision="0" nullable="false" jdbcType="12"/>
+      <column name="pendidkan_ibu" sqlType="VARCHAR" length="50" precision="0" nullable="false" jdbcType="12"/>
+      <column name="pekerjaan_ibu" sqlType="VARCHAR" length="50" precision="0" nullable="false" jdbcType="12"/>
+      <column name="penghasilan_ibu" sqlType="VARCHAR" length="50" precision="0" nullable="false" jdbcType="12"/>
+      <column name="alamat_ortu" sqlType="TEXT" length="65535" precision="0" nullable="false" jdbcType="-1"/>
+      <column name="kecamatan_ortu" sqlType="VARCHAR" length="50" precision="0" nullable="false" jdbcType="12"/>
+      <column name="kabupaten_ortu" sqlType="VARCHAR" length="50" precision="0" nullable="false" jdbcType="12"/>
+      <column name="propinsi_ortu" sqlType="VARCHAR" length="50" precision="0" nullable="false" jdbcType="12"/>
+      <column name="penerima" sqlType="VARCHAR" length="50" precision="0" nullable="false" jdbcType="12"/>
+      <column name="tgl_terima" sqlType="DATE" length="10" precision="0" nullable="false" jdbcType="91"/>
+      <column name="rekom" sqlType="TINYINT" length="3" precision="0" nullable="false" jdbcType="-6"/>
+      <primary-key name="PRIMARY" columns="id_pmbid"/>
+    </table>
+    <table name="desa" schema="" catalog="dbpmb" type="TABLE">
+      <column name="id" sqlType="VARCHAR" length="10" precision="0" nullable="false" jdbcType="12"/>
+      <column name="id_kecamatan" sqlType="VARCHAR" length="7" precision="0" nullable="true" jdbcType="12"/>
+      <column name="nama" sqlType="VARCHAR" length="40" precision="0" nullable="true" jdbcType="12"/>
+      <primary-key name="PRIMARY" columns="id"/>
+    </table>
+    <table name="info" schema="" catalog="dbpmb" type="TABLE">
+      <column name="id_info" sqlType="INT" length="10" precision="0" nullable="false" jdbcType="4" autoIncrement="true"/>
+      <column name="judul_info" sqlType="VARCHAR" length="100" precision="0" nullable="false" jdbcType="12"/>
+      <column name="info" sqlType="TEXT" length="65535" precision="0" nullable="false" jdbcType="-1"/>
+      <column name="tanggal_update" sqlType="DATE" length="10" precision="0" nullable="false" jdbcType="91"/>
+      <primary-key name="PRIMARY" columns="id_info"/>
+    </table>
+    <table name="jalur" schema="" catalog="dbpmb" type="TABLE">
+      <column name="id_jalur" sqlType="INT" length="10" precision="0" nullable="false" jdbcType="4" autoIncrement="true"/>
+      <column name="jalur" sqlType="VARCHAR" length="100" precision="0" nullable="false" jdbcType="12"/>
+      <primary-key name="PRIMARY" columns="id_jalur"/>
+    </table>
+    <table name="jenisslta" schema="" catalog="dbpmb" type="TABLE">
+      <column name="id_jenis_slta" sqlType="INT" length="10" precision="0" nullable="false" jdbcType="4" autoIncrement="true"/>
+      <column name="jenis_slta" sqlType="VARCHAR" length="20" precision="0" nullable="false" jdbcType="12"/>
+      <primary-key name="PRIMARY" columns="id_jenis_slta"/>
+    </table>
+    <table name="kabupaten" schema="" catalog="dbpmb" type="TABLE">
+      <column name="id" sqlType="VARCHAR" length="4" precision="0" nullable="false" jdbcType="12"/>
+      <column name="id_prov" sqlType="VARCHAR" length="2" precision="0" nullable="false" jdbcType="12"/>
+      <column name="nama" sqlType="VARCHAR" length="30" precision="0" nullable="false" jdbcType="12"/>
+      <primary-key name="PRIMARY" columns="id"/>
+    </table>
+    <table name="kecamatan" schema="" catalog="dbpmb" type="TABLE">
+      <column name="id" sqlType="VARCHAR" length="7" precision="0" nullable="false" jdbcType="12"/>
+      <column name="id_kabupaten" sqlType="VARCHAR" length="4" precision="0" nullable="false" jdbcType="12"/>
+      <column name="nama" sqlType="VARCHAR" length="30" precision="0" nullable="false" jdbcType="12"/>
+      <primary-key name="PRIMARY" columns="id"/>
+    </table>
+    <table name="keuangan" schema="" catalog="dbpmb" type="TABLE">
+      <column name="id" sqlType="INT" length="10" precision="0" nullable="false" jdbcType="4" autoIncrement="true"/>
+      <column name="id_pmbid" sqlType="INT" length="10" precision="0" nullable="false" jdbcType="4"/>
+      <column name="tgl_setor" sqlType="DATE" length="10" precision="0" nullable="false" jdbcType="91"/>
+      <column name="status" sqlType="VARCHAR" length="10" precision="0" nullable="false" jdbcType="12"/>
+      <primary-key name="PRIMARY" columns="id"/>
+    </table>
+    <table name="kolektif" schema="" catalog="dbpmb" type="TABLE">
+      <column name="id_status" sqlType="INT" length="10" precision="0" nullable="false" jdbcType="4" autoIncrement="true"/>
+      <column name="nama_pesanan" sqlType="VARCHAR" length="100" precision="0" nullable="false" jdbcType="12"/>
+      <column name="nama_lembaga" sqlType="VARCHAR" length="100" precision="0" nullable="false" jdbcType="12"/>
+      <column name="no_tlp" sqlType="CHAR" length="20" precision="0" nullable="false" jdbcType="1"/>
+      <column name="penerima" sqlType="VARCHAR" length="50" precision="0" nullable="false" jdbcType="12"/>
+      <column name="tgl_terima" sqlType="DATE" length="10" precision="0" nullable="false" jdbcType="91"/>
+      <column name="jml_siswa" sqlType="CHAR" length="11" precision="0" nullable="false" jdbcType="1"/>
+      <primary-key name="PRIMARY" columns="id_status"/>
+    </table>
+    <table name="pend_ayah" schema="" catalog="dbpmb" type="TABLE">
+      <column name="id_pendidikan_akhir_ayah" sqlType="INT" length="10" precision="0" nullable="false" jdbcType="4" autoIncrement="true"/>
+      <column name="pendidikan_akhir_ayah" sqlType="VARCHAR" length="20" precision="0" nullable="false" jdbcType="12"/>
+      <primary-key name="PRIMARY" columns="id_pendidikan_akhir_ayah"/>
+    </table>
+    <table name="pend_ibu" schema="" catalog="dbpmb" type="TABLE">
+      <column name="id_pendidkan_ibu" sqlType="INT" length="10" precision="0" nullable="false" jdbcType="4" autoIncrement="true"/>
+      <column name="pendidkan_ibu" sqlType="VARCHAR" length="30" precision="0" nullable="false" jdbcType="12"/>
+      <primary-key name="PRIMARY" columns="id_pendidkan_ibu"/>
+    </table>
+    <table name="penerima" schema="" catalog="dbpmb" type="TABLE">
+      <column name="id" sqlType="INT" length="10" precision="0" nullable="false" jdbcType="4" autoIncrement="true"/>
+      <column name="nama" sqlType="VARCHAR" length="100" precision="0" nullable="false" jdbcType="12"/>
+      <column name="alamat" sqlType="TEXT" length="65535" precision="0" nullable="false" jdbcType="-1"/>
+      <column name="password" sqlType="VARCHAR" length="50" precision="0" nullable="false" jdbcType="12"/>
+      <column name="username" sqlType="VARCHAR" length="50" precision="0" nullable="false" jdbcType="12"/>
+      <primary-key name="PRIMARY" columns="id"/>
+    </table>
+    <table name="personal" schema="" catalog="dbpmb" type="TABLE">
+      <column name="id_status" sqlType="INT" length="10" precision="0" nullable="false" jdbcType="4" autoIncrement="true"/>
+      <column name="nama_pesanan" sqlType="VARCHAR" length="100" precision="0" nullable="false" jdbcType="12"/>
+      <column name="status_hub" sqlType="VARCHAR" length="50" precision="0" nullable="false" jdbcType="12"/>
+      <column name="no_hp" sqlType="CHAR" length="20" precision="0" nullable="false" jdbcType="1"/>
+      <primary-key name="PRIMARY" columns="id_status"/>
+    </table>
+    <table name="prodi" schema="" catalog="dbpmb" type="TABLE">
+      <column name="id_prodi" sqlType="INT" length="10" precision="0" nullable="false" jdbcType="4" autoIncrement="true"/>
+      <column name="prodi" sqlType="VARCHAR" length="100" precision="0" nullable="false" jdbcType="12"/>
+      <column name="jumlah" sqlType="CHAR" length="50" precision="0" nullable="false" jdbcType="1"/>
+      <column name="singkatan" sqlType="CHAR" length="4" precision="0" nullable="false" jdbcType="1"/>
+      <column name="gel" sqlType="INT" length="10" precision="0" nullable="false" jdbcType="4"/>
+      <primary-key name="PRIMARY" columns="id_prodi"/>
+    </table>
+    <table name="provinsi" schema="" catalog="dbpmb" type="TABLE">
+      <column name="id" sqlType="VARCHAR" length="2" precision="0" nullable="false" jdbcType="12"/>
+      <column name="nama" sqlType="VARCHAR" length="30" precision="0" nullable="false" jdbcType="12"/>
+      <primary-key name="PRIMARY" columns="id"/>
+    </table>
+    <table name="statusnikah" schema="" catalog="dbpmb" type="TABLE">
+      <column name="id_status_nikah" sqlType="INT" length="10" precision="0" nullable="false" jdbcType="4" autoIncrement="true"/>
+      <column name="status_nikah" sqlType="VARCHAR" length="30" precision="0" nullable="false" jdbcType="12"/>
+      <primary-key name="PRIMARY" columns="id_status_nikah"/>
+    </table>
+    <table name="tes" schema="" catalog="dbpmb" type="TABLE">
+      <column name="idtes" sqlType="SMALLINT" length="5" precision="0" nullable="false" jdbcType="5"/>
+      <column name="stat" sqlType="ENUM" length="11" precision="0" nullable="false" jdbcType="1"/>
+      <column name="huruf" sqlType="CHAR" length="2" precision="0" nullable="false" jdbcType="1"/>
+      <column name="angka" sqlType="TINYINT" length="3" precision="0" nullable="false" jdbcType="-6"/>
+      <column name="JALUR" sqlType="CHAR" length="20" precision="0" nullable="false" jdbcType="1"/>
+    </table>
+    <table name="user" schema="" catalog="dbpmb" type="TABLE">
+      <column name="iduser" sqlType="MEDIUMINT" length="7" precision="0" nullable="false" jdbcType="4" autoIncrement="true"/>
+      <column name="nama" sqlType="VARCHAR" length="100" precision="0" nullable="false" jdbcType="12"/>
+      <column name="username" sqlType="VARCHAR" length="100" precision="0" nullable="false" jdbcType="12"/>
+      <column name="password" sqlType="VARCHAR" length="100" precision="0" nullable="false" jdbcType="12"/>
+      <column name="role" sqlType="VARCHAR" length="50" precision="0" nullable="false" jdbcType="12"/>
+      <column name="aktif" sqlType="TINYINT" length="3" precision="0" nullable="false" jdbcType="-6"/>
+      <primary-key name="PRIMARY" columns="iduser"/>
+    </table>
+  </data-source>
+</component>

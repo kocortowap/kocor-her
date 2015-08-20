@@ -1,0 +1,13 @@
+role user
+Super Administrator
+Admin Berkas
+Admin Uang
+Validator
+Teller
+
+link php===
+masterbayar
+bayar
+validasi
+manageuser
+laporanbayar
